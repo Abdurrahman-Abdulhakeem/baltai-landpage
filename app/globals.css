@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+@import "swiper/css/scrollbar";
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -18,4 +23,92 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  .custom-pagination-icon {
+    @apply bg-transparent opacity-65 inline-flex items-center justify-center text-goldorange text-5xl h-[15px] w-[15px] my-0 mx-6;
+  }
+
+  .swiper-pagination-bullet-active.custom-pagination-icon {
+    @apply opacity-100 text-yellow;
+  }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  @apply text-goldorange z-50;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  @apply text-yellow;
+}
+
+.swiper-scrollbar {
+  visibility: hidden;
+}
+
+.swiper-scrollbar-drag {
+  opacity: 0;
+}
+
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  10%,
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+.fade-in-out {
+  opacity: 0;
+  animation: fade-in-out 12s infinite;
+}
+
+.three-d-text {
+  font-size: 150px;
+  font-weight: bold;
+  color: #ffffff;
+
+  background: linear-gradient(45deg, #3498db, #2ecc71);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  /* Add transform for perspective effect */
+  transform: perspective(600px) rotateX(10deg) rotateY(15deg);
+}
+.three-d-text.ssn::before {
+  content: "SSN ";
+  position: absolute;
+  top: 0;
+  left: 0px;
+  color: #3498db;
+  z-index: -1;
+  /* Shadow layers to create depth */
+  text-shadow: 2px 2px #2c3e50, 4px 4px #2c3e50, 6px 6px #2c3e50,
+    8px 8px #2c3e50, 10px 10px #2c3e50, 12px 12px #2c3e50, 14px 14px #2c3e50,
+    16px 16px #2c3e50, 18px 18px #2c3e50;
+}
+
+.three-d-text.magic::before {
+  content: "magic ";
+  position: absolute;
+
+  left: 0px;
+  bottom: -350px;
+  color: #3498db;
+  z-index: -1;
+  /* Shadow layers to create depth */
+  text-shadow: 2px 2px #2c3e50, 4px 4px #2c3e50, 6px 6px #2c3e50,
+    8px 8px #2c3e50, 10px 10px #2c3e50, 12px 12px #2c3e50, 14px 14px #2c3e50,
+    16px 16px #2c3e50, 18px 18px #2c3e50;
 }
