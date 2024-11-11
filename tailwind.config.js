@@ -16,8 +16,11 @@ module.exports = {
           xl: '1360px'
         },
       },
+      fontFamily: {
+        geist: ['"Geist Mono"', 'monospace'],
+      },
       colors: {
-        lightgrey: "#E0E0E0",
+        lightgrey: "#fafafa",
         goldorange: "#FFA500",
         yellow: "#FFDD00",
         white: "#FFFFFF",
