@@ -21,16 +21,6 @@ export default function Home() {
     <>
       <Herosection />
 
-      {/* <div className="relative flex justify-center mb-36 max-w-[1200px] mx-auto">
-        <div className="absolute left-0 right-0 bg-white shadow-md p-7 rounded-lg flex items-center justify-between -mt-[70px]">
-          <Image src={"/images/ce.png"} width={100} height={100} alt="" />
-          <Image src={"/images/ul.png"} width={100} height={100} alt="" />
-          <Image src={"/images/iec.png"} width={100} height={100} alt="" />
-          <Image src={"/images/iso.png"} width={100} height={100} alt="" />
-          <Image src={"/images/roh.png"} width={100} height={100} alt="" />
-        </div>
-      </div> */}
-
       <section className="my-24  mx-auto flex gap-20 items-start justify-between max-w-[1200px] px-7 lg:my-36 lg:mb-36">
         <div className="hidden lg:flex lg:w-1/2">
           <div className="flex gap-7">
@@ -52,8 +42,8 @@ export default function Home() {
           </div>
         </div>
         <aside className="w-full text-center lg:text-left lg:w-1/2">
-          <h1 className="font-bold font-geist text-3xl  -mt-3 mb-7 leading-tight md:text-5xl">
-            Global <br /> Baltai Energy
+          <h1 className="font-bold tracking-wider text-3xl  -mt-3 mb-7 leading-tight md:text-5xl">
+            Global Baltai Energy
           </h1>
 
           <p className="opacity-60 font-normal text-base leading-[1.7] md:text-xl">
@@ -190,7 +180,7 @@ export default function Home() {
           <div className="w-full lg:w-1/2 relative">
             <span className="absolute bg-goldorange h-full w-full rounded-lg top-3 -left-3"></span>
             <Image
-              src={"/images/ppl.jpeg"}
+              src={"/images/happy-man.jpg"}
               width={100}
               height={100}
               alt=""
@@ -200,7 +190,7 @@ export default function Home() {
           </div>
 
           <div className="w-full lg:w-1/2">
-            <h1 className="font-bold relative font-geist text-3xl md:text-5xl leading-snug mb-6">
+            <h1 className="font-bold relative text-3xl md:text-5xl leading-snug font-geist mb-6">
               Commitments To Energy Efficiency.
               <span className="absolute top-0 -z-10 -right-4">
                 {" "}

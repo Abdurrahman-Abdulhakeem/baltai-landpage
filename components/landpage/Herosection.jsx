@@ -67,7 +67,7 @@ export default function Herosection() {
       <div className="absolute top-0 px-4 flex flex-col justify-center h-[550px] container py-4 max-w-[1300px] md:px-16">
         {activeIndex === 0 && (
           <div className="fade-in-out z-10 max-w-full text-center md:text-left md:max-w-[800px] space-y-7">
-            <h1 className=" text-4xl font-bold text-white leading-[1.25] md:font-extrabold md:text-5xl  md:leading-tight ">
+            <h1 className=" text-4xl font-bold text-white leading-[1.2] md:font-extrabold md:text-5xl  md:leading-tight ">
               Baltai Energy's SSN aims to transform the
               <span className="bg-gradient bg-clip-text text-transparent">
                 {" "}
@@ -75,7 +75,7 @@ export default function Herosection() {
               </span>
               landscape in Nigeria
             </h1>
-            <p className="font-normal text-white opacity-80 text-lg md:font-bold md:text-xl max-w-full md:max-w-[700px] leading-[1.38]">
+            <p className="font-normal text-white opacity-80 text-lg leading-[1.24] md:font-bold md:text-xl max-w-full md:max-w-[700px] md:leading-[1.38]">
               Our goal is to transform the energy landscape in Nigeria by
               providing comprehensive off-grid SOLAR POWER solutions to at least
               500,000 households.
@@ -96,11 +96,11 @@ export default function Herosection() {
 
         {activeIndex === 1 && (
           <div className="fade-in-out z-10 max-w-full text-center md:text-left md:max-w-[850px] space-y-7">
-            <h1 className="text-4xl font-bold text-white leading-[1.25] md:font-extrabold md:text-5xl  md:leading-tight">
+            <h1 className="text-3xl font-bold text-white leading-[1.2] md:font-extrabold md:text-5xl  md:leading-tight">
               Embrace uninterrupted power supply with cutting edge solar
               equipment via our SSN Programme.
             </h1>
-            <p className="font-medium text-white opacity-80 text-lg md:font-bold md:text-xl max-w-full md:max-w-[700px] leading-[1.38]">
+            <p className="font-medium text-white opacity-80 text-lg leading-[1.24] md:font-bold md:text-xl max-w-full md:max-w-[700px] md:leading-[1.38]">
               Easy Finance, Reduced cost, Easy Application.
             </p>
 
@@ -116,7 +116,7 @@ export default function Herosection() {
 
         {activeIndex === 2 && (
           <div className="fade-in-out z-10 max-w-full text-center md:text-left md:max-w-[800px] space-y-7">
-            <h1 className="text-3xl font-bold text-white leading-[1.25] md:font-extrabold md:text-4xl  md:leading-tight">
+            <h1 className="text-3xl font-bold text-white leading-[1.2] md:font-extrabold md:text-4xl  md:leading-tight">
               Get Low Interest Solar Financing for your home or business for up
               to 5 years on our SSN Programme
             </h1>

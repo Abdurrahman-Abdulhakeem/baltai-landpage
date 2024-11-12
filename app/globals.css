@@ -22,6 +22,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
@@ -81,7 +85,6 @@ body {
 .sticky-anim {
   position: fixed;
   top: 0;
-  /* color: rgba(241, 13, 89, 0.815); */
   right: 0;
   left: 0;
   background-color: #fafafaa6;
@@ -100,44 +103,4 @@ body {
     height: 70px;
     opacity: 1;
   }
-}
-
-
-.three-d-text {
-  font-size: 150px;
-  font-weight: bold;
-  color: #ffffff;
-
-  background: linear-gradient(45deg, #3498db, #2ecc71);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: relative;
-  /* Add transform for perspective effect */
-  transform: perspective(600px) rotateX(10deg) rotateY(15deg);
-}
-.three-d-text.ssn::before {
-  content: "SSN ";
-  position: absolute;
-  top: 0;
-  left: 0px;
-  color: #3498db;
-  z-index: -1;
-  /* Shadow layers to create depth */
-  text-shadow: 2px 2px #2c3e50, 4px 4px #2c3e50, 6px 6px #2c3e50,
-    8px 8px #2c3e50, 10px 10px #2c3e50, 12px 12px #2c3e50, 14px 14px #2c3e50,
-    16px 16px #2c3e50, 18px 18px #2c3e50;
-}
-
-.three-d-text.magic::before {
-  content: "magic ";
-  position: absolute;
-
-  left: 0px;
-  bottom: -350px;
-  color: #3498db;
-  z-index: -1;
-  /* Shadow layers to create depth */
-  text-shadow: 2px 2px #2c3e50, 4px 4px #2c3e50, 6px 6px #2c3e50,
-    8px 8px #2c3e50, 10px 10px #2c3e50, 12px 12px #2c3e50, 14px 14px #2c3e50,
-    16px 16px #2c3e50, 18px 18px #2c3e50;
 }
