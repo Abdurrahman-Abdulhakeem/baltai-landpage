@@ -44,11 +44,6 @@ export default function Herosection() {
         <SwiperSlide>
           <div className="bg-[url('/images/confetti.jpg')] bg-cover bg-center bg-no-repeat min-h-[600px] flex relative ">
             <div className="absolute h-full w-full bg-[rgba(0,0,0,0.4)]"></div>
-
-            {/* <div className="text-center z-40 flex flex-col items-center justify-center h-full w-full">
-              <div className="three-d-text ss before:-left-[100px] before:absolute"></div>
-              <div className="three-d-text maic"></div>
-            </div> */}
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -57,7 +52,7 @@ export default function Herosection() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="bg-[url('/images/solar-arr2.jpeg')] bg-cover bg-center bg-no-repeat min-h-[600px] flex relative ">
+          <div className="bg-[url('/images/test-solar.jpg')] bg-cover bg-center bg-no-repeat min-h-[600px] flex relative ">
             <div className="absolute h-full w-full bg-[rgba(0,0,0,0.4)]"></div>
           </div>
         </SwiperSlide>
@@ -96,9 +91,10 @@ export default function Herosection() {
 
         {activeIndex === 1 && (
           <div className="fade-in-out z-10 max-w-full text-center md:text-left md:max-w-[850px] space-y-7">
-            <h1 className="text-3xl font-bold text-white leading-[1.2] md:font-extrabold md:text-5xl  md:leading-tight">
-              Embrace uninterrupted power supply with cutting edge solar
-              equipment via our SSN Programme.
+            <h1 className="text-3xl font-bold text-white leading-[1.2] md:font-extrabold md:text-4xl  md:leading-tight">
+              <span className="image-text"> uninterrupted </span> power supply
+              is within reach with cutting edge solar equipment via our SSN
+              Programme.
             </h1>
             <p className="font-medium text-white opacity-80 text-lg leading-[1.24] md:font-bold md:text-xl max-w-full md:max-w-[700px] md:leading-[1.38]">
               Easy Finance, Reduced cost, Easy Application.

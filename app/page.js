@@ -60,7 +60,7 @@ export default function Home() {
         </aside>
       </section>
 
-      <section className="my-14 bg-darkgrey text-white py-20 px-7">
+      <section className="my-14 bg-greyGradient text-white py-20 px-7">
         <div className="max-w-[1200px] mx-auto">
           <h3 className="font-medium text-center md:text-left">OUR SERVICE</h3>
           <h1 className="font-medium my-10 text-2xl md:text-4xl">

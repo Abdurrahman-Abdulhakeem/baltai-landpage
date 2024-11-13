@@ -7,12 +7,14 @@ import {
   FaYoutube,
   FaInstagram,
   FaLinkedinIn,
+  FaLocationDot,
 } from "react-icons/fa6";
+import { IoIosMail } from "react-icons/io";
 
 const Footer = () => {
   const date = new Date();
   return (
-    <footer className="bg-darkgrey text-lightgrey font-normal px-7 pt-24 pb-14">
+    <footer className="bg-greyGradient text-lightgrey font-normal px-7 pt-24 pb-14">
       <div className="grid grid-cols-1 lg:grid-cols-4 max-w-[1200px] mx-auto mb-14">
         <div>
           <Link href="/">
@@ -56,7 +58,7 @@ const Footer = () => {
               Blogs
             </Link>
             <Link
-              href="/"
+              href="/faqs"
               className="block opacity-85 w-fit hover:text-goldorange transition"
             >
               FAQ's
@@ -112,14 +114,16 @@ const Footer = () => {
         <div className="space-y-3 mt-12 lg:mt-0">
           <h1 className="text-lg mb-4">Get in Touch</h1>
 
-          <p className="opacity-85 text-[15px] ">
-            652 Lagos-Abeokuta Express Way, Alagbado, Adura bus stop, Lagos.
+          <p className="opacity-85 text-[15px] flex items-start gap-1.5">
+           <span><FaLocationDot className="text-xl mt-1" /></span> 652 Lagos-Abeokuta Express Way, Alagbado, Adura bus stop, Lagos.
           </p>
 
-          <p className="opacity-85 text-[15px]">
+          <p className="opacity-85 text-[15px] flex items-center gap-1.5 hover:text-goldorange transition">
+            <IoIosMail className="text-xl"/>
             <Link href={"mailto:info@baltaienergy.com"}>info@baltaienergy.com</Link>
           </p>
-          <p className="opacity-85 text-[15px]">
+          <p className="opacity-85 text-[15px] flex items-center gap-1.5 hover:text-goldorange transition">
+           <IoIosMail className="text-xl"/>
             <Link href={"mailto:baltaienergy@gmail.com"}>baltaienergy@gmail.com</Link>
           </p>
         </div>

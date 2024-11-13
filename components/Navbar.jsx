@@ -19,14 +19,14 @@ const links = [
 ];
 
 export const MenuLinks = [
-  { path: "/", title: " ⌘ About SSN" },
-  { path: "/about", title: "⌘ Partnership" },
-  { path: "", title: "⌘ Financing" },
-  { path: "", title: "⌘ Blogs" },
-  { path: "", title: "⌘ FAQ's" },
-  { path: "", title: "⌘ Energy Glossary" },
-  { path: "", title: "⌘ Energy Calculator" },
-  { path: "", title: "⌘ Contact Us" },
+  { path: "/", title: "About SSN" },
+  { path: "/about", title: "Partnership" },
+  { path: "", title: "Financing" },
+  { path: "", title: "Blogs" },
+  { path: "/faqs", title: "FAQ's" },
+  { path: "", title: "Energy Glossary" },
+  { path: "", title: "Energy Calculator" },
+  { path: "", title: "Contact Us" },
 ];
 
 const Navbar = () => {
@@ -119,3 +119,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+// ⌘

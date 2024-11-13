@@ -27,9 +27,11 @@ module.exports = {
         black: "#000000",
         darkgrey: "#333",
         green: "#32CD32",
+        
       },
       backgroundImage: {
         gradient: 'linear-gradient(90deg, #FFA500, #FFDD00)',
+        greyGradient: 'linear-gradient(135deg, #333 0%, #444 50%, #222 100%)',
       }
     },
   },
