@@ -127,14 +127,18 @@ export const AccordionItem = ({ index, title, content, isOpen, onClick }) => {
         <h1 className="w-full md:text-lg lg:text-xl">{title}</h1>
 
         <h1 className="flex justify-end">
-          {isOpen ? <AiOutlineMinus /> : <AiOutlinePlus />}
+          {isOpen ? (
+            <AiOutlineMinus className="text-goldorange text-2xl" />
+          ) : (
+            <AiOutlinePlus className="text-goldorange text-2xl" />
+          )}
         </h1>
       </div>
 
       <div className="">
         <p
           ref={contentRef}
-          className={`text-sm my-2 overflow-hidden transition-max-height duration-300`}
+          className={`text-sm my-2 overflow-hidden transition-max-height duration-300 md:text-base`}
         >
           {content}
         </p>

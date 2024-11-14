@@ -4,17 +4,11 @@ import Button from "@/components/ui/Button";
 import Image from "next/image";
 import Link from "next/link";
 
-import { PiSolarPanelLight } from "react-icons/pi";
-import { RiBatteryChargeLine, RiDoubleQuotesL } from "react-icons/ri";
-import { LuCable } from "react-icons/lu";
-import { GrServices, GrUserExpert } from "react-icons/gr";
-import { SiAmazonsimpleemailservice } from "react-icons/si";
-import {
-  MdOutlineHighQuality,
-  MdOutlineEnergySavingsLeaf,
-} from "react-icons/md";
+import { RiDoubleQuotesL } from "react-icons/ri";
+import { MdOutlineEnergySavingsLeaf } from "react-icons/md";
 
 import Herosection from "@/components/landpage/Herosection";
+import Partners from "./partnerships/components/partners";
 
 export default function Home() {
   return (
@@ -25,19 +19,20 @@ export default function Home() {
         <div className="hidden lg:flex lg:w-1/2">
           <div className="flex gap-7">
             <Image
-              src={"/images/aside.jpg"}
+              src={"/images/aside.avif"}
               width={100}
               height={100}
               alt=""
               layout="responsive"
-              className="-mb-28 mt-28"
+              className="-mb-28 mt-28 max-w-[250px] brightness-75"
             />
             <Image
-              src={"/images/aside-2.jpg"}
+              src={"/images/aside2.jpg"}
               width={100}
               height={100}
               alt=""
               layout="responsive"
+              className="max-w-[250px] brightness-95"
             />
           </div>
         </div>
@@ -60,15 +55,22 @@ export default function Home() {
         </aside>
       </section>
 
-      <section className="my-14 bg-greyGradient text-white py-20 px-7">
+      <section className="my-14 mt-0 bg-greyGradient text-white py-20 px-7 xl:mt-[200px]">
         <div className="max-w-[1200px] mx-auto">
           <h3 className="font-medium text-center md:text-left">OUR SERVICE</h3>
-          <h1 className="font-medium my-10 text-2xl md:text-4xl">
+          <h1 className="font-medium my-10 text-2xl text-transparent bg-gradient bg-clip-text md:text-4xl">
             We Cover Every Capacity Need
           </h1>
           <div className="flex items-center justify-center gap-6 flex-wrap">
             <div className="border-[3px] border-yellow rounded-md p-6 space-y-6 max-w-full md:max-w-[280px]">
-              <PiSolarPanelLight className="text-5xl text-white" />
+              <Image
+                src={"/images/solar-small.svg"}
+                width={100}
+                height={100}
+                alt=""
+                layout="responsive"
+                className="max-w-[50px]"
+              />
 
               <h1 className="text-xl">SOLAR PANEL</h1>
 
@@ -79,8 +81,14 @@ export default function Home() {
               </p>
             </div>
             <div className="border-[3px] border-goldorange rounded-md p-6 space-y-6 max-w-full md:max-w-[280px]">
-              <RiBatteryChargeLine className="text-5xl text-white" />
-
+              <Image
+                src={"/images/battery.svg"}
+                width={100}
+                height={100}
+                alt=""
+                layout="responsive"
+                className="max-w-[50px]"
+              />
               <h1 className="text-xl">Inverter + Battery</h1>
 
               <p className="opacity-85">
@@ -90,8 +98,14 @@ export default function Home() {
               </p>
             </div>
             <div className="border-[3px] border-orange-500 rounded-md p-6 space-y-6 max-w-full md:max-w-[280px]">
-              <LuCable className="text-5xl text-white" />
-
+              <Image
+                src={"/images/cables.svg"}
+                width={100}
+                height={100}
+                alt=""
+                layout="responsive"
+                className="max-w-[50px]"
+              />
               <h1 className="text-xl">Cables</h1>
 
               <p className="opacity-85">
@@ -100,9 +114,15 @@ export default function Home() {
                 ensures seamless installation, backed by a solid warranty.
               </p>
             </div>
-            <div className="border-[3px] border-gray-400 rounded-md p-6 space-y-6 max-w-full md:max-w-[280px]">
-              <GrServices className="text-5xl text-white" />
-
+            <div className="border-[3px] border-amber-200 rounded-md p-6 space-y-6 max-w-full md:max-w-[280px]">
+              <Image
+                src={"/images/setup.svg"}
+                width={100}
+                height={100}
+                alt=""
+                layout="responsive"
+                className="max-w-[50px]"
+              />
               <h1 className="text-xl">Installation</h1>
 
               <p className="opacity-85">
@@ -111,9 +131,15 @@ export default function Home() {
                 ensures seamless installation, backed by a solid warranty.
               </p>
             </div>
-            <div className="border-[3px] border-gray-600 rounded-md p-6 space-y-6 max-w-full md:max-w-[280px]">
-              <SiAmazonsimpleemailservice className="text-5xl text-white" />
-
+            <div className="border-[3px] border-gray-400 rounded-md p-6 space-y-6 max-w-full md:max-w-[280px]">
+              <Image
+                src={"/images/service.svg"}
+                width={100}
+                height={100}
+                alt=""
+                layout="responsive"
+                className="max-w-[50px]"
+              />
               <h1 className="text-xl">After Sales Service</h1>
 
               <p className="opacity-85">
@@ -122,9 +148,15 @@ export default function Home() {
                 ensures seamless installation, backed by a solid warranty.
               </p>
             </div>
-            <div className="border-[3px] border-gray-400  rounded-md p-6 space-y-6 max-w-full md:max-w-[280px]">
-              <GrUserExpert className="text-5xl text-white" />
-
+            <div className="border-[3px] border-lime-200  rounded-md p-6 space-y-6 max-w-full md:max-w-[280px]">
+              <Image
+                src={"/images/professional.svg"}
+                width={100}
+                height={100}
+                alt=""
+                layout="responsive"
+                className="max-w-[50px]"
+              />
               <h1 className="text-xl">Professional Expertise</h1>
 
               <p className="opacity-85">
@@ -133,9 +165,15 @@ export default function Home() {
                 ensures seamless installation, backed by a solid warranty.
               </p>
             </div>
-            <div className="border-[3px] border-gray-700  rounded-md p-6 space-y-6 max-w-full md:max-w-[280px]">
-              <MdOutlineHighQuality className="text-5xl text-white" />
-
+            <div className="border-[3px] border-slate-500  rounded-md p-6 space-y-6 max-w-full md:max-w-[280px]">
+              <Image
+                src={"/images/high-quality.svg"}
+                width={100}
+                height={100}
+                alt=""
+                layout="responsive"
+                className="max-w-[50px]"
+              />
               <h1 className="text-xl">High Quality Equipment</h1>
 
               <p className="opacity-85">
@@ -194,7 +232,7 @@ export default function Home() {
               Commitments To Energy Efficiency.
               <span className="absolute top-0 -z-10 -right-4">
                 {" "}
-                <MdOutlineEnergySavingsLeaf className="text-goldorange text-5xl md:text-8xl" />{" "}
+                <MdOutlineEnergySavingsLeaf className="text-goldorange text-5xl opacity-55 md:text-8xl" />{" "}
               </span>
             </h1>
             <p className="font-normal text-lg mb-8 opacity-90">
@@ -225,43 +263,7 @@ export default function Home() {
       </section>
 
       <section className="my-12">
-        <marquee>
-          <div className="flex items-center gap-12 justify-between">
-            <Image
-              src={"/images/fox-ess-logo.png"}
-              width={100}
-              height={100}
-              alt=""
-              className=" md:h-[100px] md:w-[200px]"
-            />
-            <Image
-              src={"/images/uba-logo.svg"}
-              width={100}
-              height={100}
-              alt=""
-              className="md:h-[100px] md:w-[200px]"
-            />
-            <Image
-              src={"/images/opticom-logo.png"}
-              width={100}
-              height={100}
-              alt=""
-              className="md:h-[100px] md:w-[200px]"
-            />
-            <Image
-              src={"/images/opticom-logo.png"}
-              width={100}
-              height={100}
-              alt=""
-            />
-            <Image
-              src={"/images/opticom-logo.png"}
-              width={100}
-              height={100}
-              alt=""
-            />
-          </div>
-        </marquee>
+        <Partners />
       </section>
 
       <section className="my-28 relative px-7">

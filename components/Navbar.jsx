@@ -20,11 +20,11 @@ const links = [
 
 export const MenuLinks = [
   { path: "/", title: "About SSN" },
-  { path: "/about", title: "Partnership" },
-  { path: "", title: "Financing" },
+  { path: "/partnerships", title: "Partnership" },
+  { path: "/financing", title: "Financing" },
   { path: "", title: "Blogs" },
   { path: "/faqs", title: "FAQ's" },
-  { path: "", title: "Energy Glossary" },
+  { path: "/energy-glossary", title: "Energy Glossary" },
   { path: "", title: "Energy Calculator" },
   { path: "", title: "Contact Us" },
 ];

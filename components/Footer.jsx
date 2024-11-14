@@ -40,7 +40,7 @@ const Footer = () => {
               About Us
             </Link>
             <Link
-              href="/"
+              href="/team"
               className="block opacity-85 w-fit hover:text-goldorange transition"
             >
               Our Team
@@ -74,25 +74,25 @@ const Footer = () => {
               Apply for SSN
             </Link>
             <Link
-              href="/"
+              href="/partnerships"
               className="block opacity-85 w-fit hover:text-goldorange transition"
             >
               Partnerships
             </Link>
             <Link
-              href="/"
+              href="/financing"
               className="block opacity-85 w-fit hover:text-goldorange transition"
             >
               Financing
             </Link>
             <Link
-              href="/"
+              href="/energy-glossary"
               className="block opacity-85 w-fit hover:text-goldorange transition"
             >
               Energy Glossary
             </Link>
             <Link
-              href="/"
+              href=""
               className="block opacity-85 w-fit hover:text-goldorange transition"
             >
               Energy Calculator

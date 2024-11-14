@@ -101,7 +101,7 @@ body {
 
 
 .image-text {
-  @apply text-[10vw] block font-bold text-transparent bg-[url('/images/test-solar.jpg')] bg-no-repeat bg-center;
+  @apply text-[120px] block font-bold text-transparent bg-[url('/images/test-solar.jpg')] bg-no-repeat bg-center;
   background-size: cover;
   -webkit-background-clip: text;
   background-clip: text;
