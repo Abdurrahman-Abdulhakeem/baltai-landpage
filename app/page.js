@@ -8,7 +8,8 @@ import { RiDoubleQuotesL } from "react-icons/ri";
 import { MdOutlineEnergySavingsLeaf } from "react-icons/md";
 
 import Herosection from "@/components/landpage/Herosection";
-import Partners from "./partnerships/components/partners";
+import Partners from "./partnerships/components/Partners";
+
 
 export default function Home() {
   return (
@@ -263,7 +264,7 @@ export default function Home() {
       </section>
 
       <section className="my-12">
-        <Partners />
+        <Partners/>
       </section>
 
       <section className="my-28 relative px-7">
