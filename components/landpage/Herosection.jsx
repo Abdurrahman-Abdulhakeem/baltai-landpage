@@ -42,17 +42,27 @@ export default function Herosection() {
         onSlideChange={handleSlideChange}
       >
         <SwiperSlide>
-          <div className="bg-[url('/images/confetti.jpg')] bg-cover bg-center bg-no-repeat min-h-[600px] flex relative ">
+          <div className="bg-[url('/images/roof.jpg')] bg-cover bg-center bg-no-repeat min-h-[600px] flex relative ">
             <div className="absolute h-full w-full bg-[rgba(0,0,0,0.4)]"></div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="bg-[url('/images/solar-arr1.jpg')] bg-cover bg-center bg-no-repeat min-h-[600px] flex relative ">
+          <div className="bg-[url('/images/newSolar2.jpg')] bg-cover bg-center bg-no-repeat min-h-[600px] flex relative ">
             <div className="absolute h-full w-full bg-[rgba(0,0,0,0.4)]"></div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="bg-[url('/images/test-solar.jpg')] bg-cover bg-center bg-no-repeat min-h-[600px] flex relative ">
+          <div className="bg-[url('/images/newSolar3.jpg')] bg-cover bg-center bg-no-repeat min-h-[600px] flex relative ">
+            <div className="absolute h-full w-full bg-[rgba(0,0,0,0.4)]"></div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="bg-[url('/images/family1.jpg')] bg-cover bg-center bg-no-repeat min-h-[600px] flex relative ">
+            <div className="absolute h-full w-full bg-[rgba(0,0,0,0.4)]"></div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="bg-[url('/images/nightlife.jpg')] bg-cover bg-center bg-no-repeat min-h-[600px] flex relative ">
             <div className="absolute h-full w-full bg-[rgba(0,0,0,0.4)]"></div>
           </div>
         </SwiperSlide>
@@ -62,15 +72,15 @@ export default function Herosection() {
       <div className="absolute top-0 px-4 flex flex-col justify-center h-[550px] container py-4 max-w-[1300px] md:px-16">
         {activeIndex === 0 && (
           <div className="fade-in-out z-10 max-w-full text-center md:text-left md:max-w-[800px] space-y-7">
-            <h1 className=" text-4xl font-bold text-white leading-[1.2] md:font-extrabold md:text-5xl  md:leading-tight ">
-              Baltai Energy's SSN aims to transform the
+            <h1 className="text-4xl tracking-[-0.06em] font-bold text-white leading-[1.2] md:font-bold md:text-5xl  md:leading-tight">
+              Baltai Energy's SSN <span className="font-extralight"> aims to transform the
               <span className="bg-gradient bg-clip-text text-transparent">
                 {" "}
                 ENERGY{" "}
               </span>
-              landscape in Nigeria
+              landscape in Nigeria </span>
             </h1>
-            <p className="font-normal text-white opacity-80 text-lg leading-[1.24] md:font-bold md:text-xl max-w-full md:max-w-[700px] md:leading-[1.38]">
+            <p className="font-extralight text-white opacity-90 text-xl leading-[1.24] md:text-2xl max-w-full md:max-w-[700px] md:leading-[1.38]">
               Our goal is to transform the energy landscape in Nigeria by
               providing comprehensive off-grid SOLAR POWER solutions to at least
               500,000 households.
@@ -91,12 +101,12 @@ export default function Herosection() {
 
         {activeIndex === 1 && (
           <div className="fade-in-out z-10 max-w-full text-center md:text-left md:max-w-[850px] space-y-7">
-            <h1 className="text-3xl font-bold text-white leading-[1.2] md:font-extrabold md:text-4xl  md:leading-tight">
-              <span className="image-text"> uninterrupted </span> power supply
-              is within reach with cutting edge solar equipment via our SSN
-              Programme.
+            <h1 className="text-3xl tracking-[-0.06em] font-bold text-white leading-[1.2] md:font-bold md:text-5xl md:leading-tight">
+               Uninterrupted Power Supply
+               <span className="font-extralight"> is within reach with cutting edge solar equipment via our SSN
+              Programme. </span>
             </h1>
-            <p className="font-medium text-white opacity-80 text-lg leading-[1.24] md:font-bold md:text-xl max-w-full md:max-w-[700px] md:leading-[1.38]">
+            <p className="font-extralight text-white opacity-90 text-xl leading-[1.24]  md:text-2xl max-w-full md:max-w-[700px] md:leading-[1.38]">
               Easy Finance, Reduced cost, Easy Application.
             </p>
 
@@ -112,26 +122,26 @@ export default function Herosection() {
 
         {activeIndex === 2 && (
           <div className="fade-in-out z-10 max-w-full text-center md:text-left md:max-w-[800px] space-y-7">
-            <h1 className="text-3xl font-bold text-white leading-[1.2] md:font-extrabold md:text-4xl  md:leading-tight">
-              Get Low Interest Solar Financing for your home or business for up
-              to 5 years on our SSN Programme
+            <h1 className="text-3xl tracking-[-0.06em] font-bold text-white leading-[1.2] md:font-bold md:text-5xl  md:leading-tight">
+              Get Low Interest Solar Financing <span className="font-extralight"> for your home or business for up
+              to 5 years on our SSN Programme </span>
             </h1>
 
             <div>
-              <p className="font-medium text-white opacity-80 text-lg md:text-xl max-w-full md:max-w-[700px] flex items-center gap-1">
-                <span className="text-white opacity-80">
+              <p className="font-extralight text-white opacity-90 text-xl md:text-2xl max-w-full md:max-w-[700px] flex items-center gap-1">
+                <span className="text-white opacity-90">
                   <MdPlayArrow />
                 </span>
                 Get financed within 48hrs
               </p>
-              <p className="font-medium text-white opacity-80 text-lg md:text-xl max-w-full md:max-w-[700px] flex items-center gap-1">
-                <span className="text-white opacity-80">
+              <p className="font-extralight text-white opacity-90 text-xl md:text-2xl max-w-full md:max-w-[700px] flex items-center gap-1">
+                <span className="text-white opacity-90">
                   <MdPlayArrow />
                 </span>
                 Enjoy Low interest rates
               </p>
-              <p className="font-medium text-white opacity-80 text-lg md:text-xl max-w-full md:max-w-[700px] flex items-center gap-1">
-                <span className="text-white opacity-80">
+              <p className="font-extralight text-white opacity-90 text-xl md:text-2xl max-w-full md:max-w-[700px] flex items-center gap-1">
+                <span className="text-white opacity-90">
                   <MdPlayArrow />
                 </span>
                 Experience No hassle Application
@@ -147,6 +157,47 @@ export default function Herosection() {
             </div>
           </div>
         )}
+
+
+{activeIndex === 3 && (
+          <div className="fade-in-out z-10 max-w-full text-center md:text-left md:max-w-[800px] space-y-7">
+            <h1 className="text-4xl tracking-[-0.06em] font-bold text-white leading-[1.2] md:font-bold md:text-5xl  md:leading-tight">
+               Enjoy Uninterrupted <span className="font-extralight">  family time</span>
+            </h1>
+            <p className="font-extralight text-white opacity-90 text-xl leading-[1.24] md:text-2xl max-w-full md:max-w-[700px] md:leading-[1.38]">
+            Powered by Uninterrupted power supply.
+            </p>
+
+            <div className="space-x-4 pt-7 md:pt-12">
+              <Link href={"/"}>
+                <Button classNames={"bg-gradient text-white"}>
+                  Make The Switch
+                </Button>
+              </Link>
+            </div>
+          </div>
+        )}
+
+
+{activeIndex === 4 && (
+          <div className="fade-in-out z-10 max-w-full text-center md:text-left md:max-w-[850px] space-y-7">
+            <h1 className="text-4xl tracking-[-0.06em] font-bold text-white leading-[1.2] md:font-bold md:text-5xl  md:leading-tight">
+            Illuminate Your City <span className="font-extralight"> with Powerful, Energy-Efficient Solutions </span>
+            </h1>
+            <p className="font-extralight text-white opacity-90 text-xl leading-[1.24] md:text-2xl max-w-full md:max-w-[700px] md:leading-[1.38]">
+            Qualitative, high-capacity solutions designed to keep your city glowing all night.
+            </p>
+
+            <div className="space-x-4 pt-7 md:pt-12">
+              <Link href={"/"}>
+                <Button classNames={"bg-gradient text-white"}>
+                  Make The Switch
+                </Button>
+              </Link>
+            </div>
+          </div>
+        )}
+
       </div>
     </section>
   );

@@ -148,7 +148,7 @@ export default function Home() {
                 ensures seamless installation, backed by a solid warranty.
               </p>
             </div>
-            <div className="border-[3px] border-lime-200  rounded-md p-6 space-y-6 max-w-full md:max-w-[280px]">
+            <div className="border-[3px] border-gray-200 rounded-md p-6 space-y-6 max-w-full md:max-w-[280px]">
               <Image
                 src={"/images/professional.svg"}
                 width={100}

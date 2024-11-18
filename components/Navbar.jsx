@@ -56,7 +56,7 @@ const Navbar = () => {
     <>
       <header
         ref={headerRef}
-        className="sticky z-[1000] backdrop-blur-sm"
+        className="sticky z-[1000] bg-white/50 backdrop-blur-sm"
         id="header"
       >
         <div className="max-w-[1300px] flex items-center justify-between py-4 px-4 container mx-auto">

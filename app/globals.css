@@ -98,19 +98,3 @@ body {
     opacity: 1;
   }
 }
-
-
-.image-text {
-  @apply text-[120px] block font-bold text-transparent bg-[url('/images/test-solar.jpg')] bg-no-repeat bg-center;
-  background-size: cover;
-  -webkit-background-clip: text;
-  background-clip: text;
-  animation: moveBackground 4s infinite ease-in-out;
-}
-
-/* Keyframe animation to move the image background up and down */
-@keyframes moveBackground {
-  0% { background-position: center top; }
-  50% { background-position: center bottom; }
-  100% { background-position: center top; }
-}

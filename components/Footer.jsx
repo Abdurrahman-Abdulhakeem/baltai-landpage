@@ -15,7 +15,7 @@ const Footer = () => {
   const date = new Date();
   return (
     <footer className="bg-greyGradient text-lightgrey font-normal px-7 pt-24 pb-14">
-      <div className="grid grid-cols-1 lg:grid-cols-4 max-w-[1200px] mx-auto mb-14">
+      <div className="grid grid-cols-1 lg:grid-cols-3 max-w-[1200px] mx-auto mb-14">
         <div>
           <Link href="/">
             <Image
@@ -29,7 +29,7 @@ const Footer = () => {
           </Link>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-14 col-span-1 mr-0 lg:col-span-2 lg:mr-10">
+        <div className="flex flex-col lg:flex-row gap-14 col-span-1 mr-0 lg:col-span-1 ">
           <div className="space-y-3 text-[15px] mt-12 lg:mt-0">
             <h1 className="text-lg mb-4">Company</h1>
 
@@ -98,7 +98,7 @@ const Footer = () => {
               Energy Calculator
             </Link>
           </div>
-          <div className="space-y-3 text-[15px] ">
+          {/* <div className="space-y-3 text-[15px] ">
             <h1 className="text-lg mb-4">Services</h1>
 
             <p className="opacity-85">Solar Panels</p>
@@ -108,7 +108,7 @@ const Footer = () => {
             </p>
             <p className="opacity-85">Installation</p>
             <p className="opacity-85">After Sales Service</p>
-          </div>
+          </div> */}
         </div>
 
         <div className="space-y-3 mt-12 lg:mt-0">
